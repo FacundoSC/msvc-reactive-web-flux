@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface ProductService {
     List<Product> findAll();
-    Product findByCategory(String category);
+    List<Product> findByCategory(String category);
     Product findByCode(int code);
 
     void save(Product product);
