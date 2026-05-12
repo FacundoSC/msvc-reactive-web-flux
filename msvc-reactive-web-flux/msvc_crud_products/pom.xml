@@ -7,11 +7,12 @@
         <artifactId>msvc-reactive-web-flux</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
-    <groupId>com.crdev</groupId>
+
     <artifactId>msvc_crud_products</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>msvc_crud_products</name>
     <description>msvc_crud_products</description>
+
     <url/>
     <licenses>
         <license/>
