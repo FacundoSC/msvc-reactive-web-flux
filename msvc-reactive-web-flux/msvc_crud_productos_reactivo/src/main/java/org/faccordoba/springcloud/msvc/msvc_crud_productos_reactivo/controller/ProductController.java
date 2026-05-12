@@ -22,26 +22,26 @@ public class ProductController {
         return productService.findAll();
     }
 
-    @GetMapping(value = "/category/{category}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "/category/{category}")
     public Flux<Product> getAllProductsByCategory(@PathVariable String category ) {
          return productService.findByCategory(category);
      }
 
-    @GetMapping(value = "/{code}", produces = MediaType.APPLICATION_JSON_VALUE  )
+    @GetMapping(value = "/{code}", produces = MediaType.TEXT_EVENT_STREAM_VALUE  )
     public Mono<Product> getProductByCode(@PathVariable("code") int code) {
-         return productService.findByCode(code);
+        return productService.findByCode(code);
      }
-    @PostMapping(value = "/", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Mono<Void> save(@RequestBody Product product ) {
-            return productService.save(product);
+     @PostMapping(value = "/", consumes = MediaType.TEXT_EVENT_STREAM_VALUE)
+     public Mono<Void> save(@RequestBody Product product ) {
+        return productService.save(product);
     }
 
-    @DeleteMapping(value = "/{code}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @DeleteMapping(value = "/{code}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Mono<Product> delete(@PathVariable int code) {
         return productService.delete(code);
     }
 
-    @PatchMapping(value = "/{code}", produces = MediaType.APPLICATION_JSON_VALUE)
+    @PatchMapping(value = "/{code}", produces = MediaType.TEXT_EVENT_STREAM_VALUE)
     public Mono<Product> update(@PathVariable int code, @RequestBody Product product) {
         return productService.updatePriceUnit(code, product.getPriceUnit());
     }
