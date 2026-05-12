@@ -7,6 +7,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/msvc_crud_products/pom.xml" />
+        <option value="$PROJECT_DIR$/msvc_names_reactive/pom.xml" />
+        <option value="$PROJECT_DIR$/msvc_crud_productos_reactivo/pom.xml" />
       </list>
     </option>
   </component>

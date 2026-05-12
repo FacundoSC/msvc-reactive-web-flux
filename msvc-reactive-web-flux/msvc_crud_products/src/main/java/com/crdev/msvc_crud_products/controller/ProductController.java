@@ -34,6 +34,7 @@ public class ProductController {
 
     @PostMapping(value = "/", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void save(@RequestBody Product product ) {
+
         productService.save(product);
     }
 

@@ -8,7 +8,6 @@
     <artifactId>msvc-reactive-web-flux</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -19,10 +18,13 @@
     <modules>
         <module>core</module>
         <module>msvc_crud_products</module>
+        <module>msvc_crud_productos_reactivo</module>
+        <module>msvc_names_reactive</module>
     </modules>
 
 
     <properties>
+        <java.version>26</java.version>
         <maven.compiler.source>26</maven.compiler.source>
         <maven.compiler.target>26</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
