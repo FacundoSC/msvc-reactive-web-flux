@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -9,6 +8,8 @@
         <option value="$PROJECT_DIR$/msvc_crud_products/pom.xml" />
         <option value="$PROJECT_DIR$/msvc_names_reactive/pom.xml" />
         <option value="$PROJECT_DIR$/msvc_crud_productos_reactivo/pom.xml" />
+        <option value="$PROJECT_DIR$/test-crud-products-spring/pom.xml" />
+        <option value="$PROJECT_DIR$/msvc_rastrear/pom.xml" />
       </list>
     </option>
   </component>
