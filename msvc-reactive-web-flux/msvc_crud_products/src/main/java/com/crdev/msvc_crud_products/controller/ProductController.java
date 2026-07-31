@@ -9,6 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1/products")
+@CrossOrigin("*")
 public class ProductController {
 
     private final ProductService productService;
@@ -34,7 +35,6 @@ public class ProductController {
 
     @PostMapping(value = "/", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void save(@RequestBody Product product ) {
-
         productService.save(product);
     }
 

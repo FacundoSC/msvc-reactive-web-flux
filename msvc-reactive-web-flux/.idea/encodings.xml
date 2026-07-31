@@ -3,9 +3,12 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_productos_reactivo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msvc_crud_productos_reactivo_2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_products/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_names_reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/msvc_rastrear/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/test-crud-products-spring/src/main/java" charset="UTF-8" />
   </component>
 </project>

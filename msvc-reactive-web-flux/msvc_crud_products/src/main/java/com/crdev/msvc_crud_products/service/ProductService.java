@@ -8,10 +8,7 @@ public interface ProductService {
     List<Product> findAll();
     List<Product> findByCategory(String category);
     Product findByCode(int code);
-
     void save(Product product);
-
     Product delete(int code);
-
     Product updatePriceUnit(int code, double priceUnit);
 }
