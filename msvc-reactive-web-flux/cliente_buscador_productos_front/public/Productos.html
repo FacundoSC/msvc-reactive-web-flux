@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/styles.css"></link>
+</head>
+<body>
+    <header>
+        <h1>Gestión de Productos</h1>
+    </header>
+    <div class="container">
+        <div class="mb-4 search-box">
+            <input type="text" id="searchInput" placeholder="Buscar producto por nombre, categoría o código..." oninput="filtrarProductos()">
+        </div>
+        <div class="error-msg" id="errorMsg"></div>
+        <div class="loading" id="loading">Cargando productos...</div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Código</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th>Categoría</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="productosBody"></tbody>
+        </table>
+        <div class="no-results" id="noResults">No se encontraron productos.</div>
+    </div>
+    <div class="modal-overlay" id="modalOverlay" onclick="cerrarModal()">
+        <div class="modal" onclick="event.stopPropagation()">
+            <h2>Detalle del Producto</h2>
+            <p><strong>Código:</strong> <span id="detCode"></span></p>
+            <p><strong>Nombre:</strong> <span id="detName"></span></p>
+            <p><strong>Precio:</strong> <span id="detPrice"></span></p>
+            <p><strong>Categoría:</strong> <span id="detCategory"></span></p>
+            <button class="btn btn-primary" onclick="cerrarModal()">Cerrar</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
