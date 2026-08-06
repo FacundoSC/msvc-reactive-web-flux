@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: msvc_crud_productos_reactivo-securizado-jwt
+server:
+  port: 8085
+jwtKey: ThisIsSecretForJWTHS512SignaturaAlgorithmThatMUSTHAVE64ByteLength
+bearer: 'Bearer '
