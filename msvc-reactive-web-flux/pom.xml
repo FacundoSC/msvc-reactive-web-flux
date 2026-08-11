@@ -25,6 +25,7 @@
         <module>msvc_crud_productos_reactivo-securizado</module>
         <module>msvc_crud_productos_reactivo-securizado-jwt</module>
         <module>msvc_rastrear-jwt</module>
+        <module>10-msvc_crud_productos_reactivo-bd</module>
 
 
     </modules>
