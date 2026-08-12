@@ -19,13 +19,15 @@
         <module>core</module>
         <module>msvc_crud_products</module>
         <module>msvc_crud_productos_reactivo</module>
-        <module>msvc_names_reactive</module>
+        <module>2-msvc_names_reactive</module>
+        <module>2b-msvc_names_reactive_funcional</module>
         <module>msvc_crud_productos_reactivo_2</module>
         <module>msvc_rastrear</module>
         <module>msvc_crud_productos_reactivo-securizado</module>
         <module>msvc_crud_productos_reactivo-securizado-jwt</module>
         <module>msvc_rastrear-jwt</module>
         <module>10-msvc_crud_productos_reactivo-bd</module>
+        <module>10b-msvc_crud_productos_reactivo-bd-funtional-endpoint</module>
 
 
     </modules>
