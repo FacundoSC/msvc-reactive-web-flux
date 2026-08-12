@@ -2,13 +2,15 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/10-msvc_crud_productos_reactivo-bd/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/10b-msvc_crud_productos_reactivo-bd-funtional-endpoint/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2-msvc_names_reactive/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/2b-msvc_names_reactive_funcional/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_productos_reactivo-securizado-jwt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_productos_reactivo-securizado/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_productos_reactivo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_productos_reactivo_2/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_crud_products/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/msvc_names_reactive/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_rastrear-jwt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_rastrear/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
