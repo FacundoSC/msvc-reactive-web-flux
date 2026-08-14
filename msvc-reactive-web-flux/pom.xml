@@ -28,6 +28,8 @@
         <module>msvc_rastrear-jwt</module>
         <module>10-msvc_crud_productos_reactivo-bd</module>
         <module>10b-msvc_crud_productos_reactivo-bd-funtional-endpoint</module>
+        <module>11_app_example_producer</module>
+        <module>11_app_example_consumer</module>
 
 
     </modules>
