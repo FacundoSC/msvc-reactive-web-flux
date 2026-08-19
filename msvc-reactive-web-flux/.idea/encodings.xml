@@ -5,6 +5,10 @@
     <file url="file://$PROJECT_DIR$/10b-msvc_crud_productos_reactivo-bd-funtional-endpoint/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/11_app_example_consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/11_app_example_producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/13_msvc_orders/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/14_msvc-stock/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/14_msvc_crud_productos_reactivo-bd-funtional-endpoint/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/15_msvc_envios/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/2-msvc_names_reactive/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/2b-msvc_names_reactive_funcional/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/core/src/main/java" charset="UTF-8" />
@@ -16,6 +20,7 @@
     <file url="file://$PROJECT_DIR$/msvc_names_reactive/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_rastrear-jwt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/msvc_rastrear/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/new-producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/test-crud-products-spring/src/main/java" charset="UTF-8" />

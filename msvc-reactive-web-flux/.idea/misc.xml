@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
@@ -10,7 +11,16 @@
         <option value="$PROJECT_DIR$/msvc_crud_productos_reactivo/pom.xml" />
         <option value="$PROJECT_DIR$/test-crud-products-spring/pom.xml" />
         <option value="$PROJECT_DIR$/msvc_rastrear/pom.xml" />
+        <option value="$PROJECT_DIR$/msvc_orders/pom.xml" />
+        <option value="$PROJECT_DIR$/msvc-stock/pom.xml" />
+        <option value="$PROJECT_DIR$/msvc_envios/pom.xml" />
+        <option value="$PROJECT_DIR$/new-producer/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/new-producer/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="26" project-jdk-type="JavaSDK">
