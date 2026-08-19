@@ -1,7 +1,8 @@
-package org.faccordoba.springcloud.msvc.msvcstock.service;
+package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.service;
 
-import org.faccordoba.springcloud.msvc.msvcstock.model.Order;
+
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Order;
 
 public interface StockService {
-    void updateStock(Order order);
+    void updateStock(String json);
 }

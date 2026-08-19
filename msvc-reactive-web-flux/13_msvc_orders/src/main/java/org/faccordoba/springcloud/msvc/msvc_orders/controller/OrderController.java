@@ -2,12 +2,15 @@ package org.faccordoba.springcloud.msvc.msvc_orders.controller;
 
 import org.faccordoba.springcloud.msvc.msvc_orders.model.Order;
 import org.faccordoba.springcloud.msvc.msvc_orders.service.OrderService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/v1/orders")
 public class OrderController {
+    private Logger logger = LoggerFactory.getLogger(OrderController.class);
     private final OrderService orderService;
     public  OrderController(OrderService orderService) {
         this.orderService = orderService;
@@ -20,6 +23,7 @@ public class OrderController {
         orderService.createOrder(order);
         return ResponseEntity.ok().build();
         } catch (Exception e) {
+            logger.error(e.getMessage(), e);
             return ResponseEntity.status(500).build();
         }
     }

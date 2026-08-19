@@ -1,6 +1,6 @@
 package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.controller;
 
-import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.domain.Product;
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Product;
 import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.service.ProductService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

@@ -3,7 +3,7 @@ package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.controll
 
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.security.Keys;
-import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.domain.UserLogin;
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.UserLogin;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

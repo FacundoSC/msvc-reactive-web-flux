@@ -1,6 +1,6 @@
 package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.service;
 
-import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.domain.Product;
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Product;
 import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.repository.ProductRepository;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;

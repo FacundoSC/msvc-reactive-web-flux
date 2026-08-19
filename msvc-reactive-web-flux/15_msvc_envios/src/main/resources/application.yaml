@@ -1,0 +1,15 @@
+server:
+  port: 9095
+spring:
+  application:
+    name: msvc_envios
+  r2dbc:
+    url: r2dbc:mysql://localhost:3306/transporte
+    username: root
+    password: root
+
+
+  kafka:
+    topic:
+      name: orders-topic
+

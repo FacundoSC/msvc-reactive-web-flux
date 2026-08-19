@@ -1,6 +1,6 @@
 package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.repository;
 
-import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.domain.Product;
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Product;
 import org.springframework.data.r2dbc.repository.Modifying;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.transaction.annotation.Transactional;

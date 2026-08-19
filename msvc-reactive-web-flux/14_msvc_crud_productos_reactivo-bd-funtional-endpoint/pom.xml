@@ -12,23 +12,10 @@
     <groupId>org.faccordoba.springcloud.msvc</groupId>
     <artifactId>msvc_crud_productos_reactivo-bd</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>10-msvc_crud_productos_reactivo-bd</name>
-    <description>10-msvc_crud_productos_reactivo-bd</description>
-    <url/>
-    <licenses>
-        <license/>
-    </licenses>
-    <developers>
-        <developer/>
-    </developers>
-    <scm>
-        <connection/>
-        <developerConnection/>
-        <tag/>
-        <url/>
-    </scm>
+    <name>14-msvc_crud_productos_reactivo-bd</name>
+    <description>14-msvc_crud_productos_reactivo-bd</description>
     <properties>
-        <java.version>26</java.version>
+        <java.version>17</java.version>
     </properties>
 
     <dependencies>
@@ -55,6 +42,25 @@
             <artifactId>r2dbc-mysql</artifactId>
             <version>1.4.3</version>
             <scope>runtime</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.21.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.21.4</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.21</version>
         </dependency>
 
     </dependencies>

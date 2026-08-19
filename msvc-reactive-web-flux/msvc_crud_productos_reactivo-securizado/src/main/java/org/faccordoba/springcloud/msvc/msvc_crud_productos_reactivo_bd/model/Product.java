@@ -1,4 +1,4 @@
-package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.domain;
+package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,6 +1,6 @@
 package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.service;
 
-import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.domain.Product;
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Product;
 import org.junit.jupiter.api.*;
 import org.springframework.boot.test.context.SpringBootTest;
 import reactor.test.StepVerifier;
