@@ -1,5 +1,6 @@
 package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.service;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
 import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Order;
 import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.model.Product;
 import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.repository.ProductRepository;
@@ -35,7 +36,8 @@ public class ProductServiceImp implements ProductService , StockService {
 
     @Override
     public Mono<Product> findByCode(int code) {
-        return productsRepository.findById(code);
+        Mono<Product> p = productsRepository.findById(code);
+        return p;
     }
 
     @Override
@@ -67,8 +69,11 @@ public class ProductServiceImp implements ProductService , StockService {
 
 
 
+
+
+
     @Override
-    @KafkaListener(topics = "${spring.kafka.topic.name}", groupId = "group1")
+    @KafkaListener(topics = "${spring.kafka.topic.name}", containerFactory = "kafkaListenerContainerFactory", groupId = "group1")
     public void updateStock(String json) {
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -76,10 +81,11 @@ public class ProductServiceImp implements ProductService , StockService {
             logger.info("order: {}", order);
             findByCode(order.getCode()) //Mono<Product>
                     .flatMap( product -> {
-                        product.setStock(product.getStock() - order.getCode());
+                        product.setStock(product.getStock() - order.getUnits());
                         return productsRepository.save(product);
                     }) //Mono<Product>
-                    .switchIfEmpty(Mono.empty());
+                    .switchIfEmpty(Mono.empty())
+                    .subscribe();
         } catch (com.fasterxml.jackson.core.JsonProcessingException e) {
             logger.error("Failed to parse order JSON", e);
         }
