@@ -1,0 +1,9 @@
+server:
+  port: 8093
+spring:
+  application:
+    name: msvc_crud_productos_reactivo_tienda_2
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
