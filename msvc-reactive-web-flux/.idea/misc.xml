@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/msvc-stock/pom.xml" />
         <option value="$PROJECT_DIR$/msvc_envios/pom.xml" />
         <option value="$PROJECT_DIR$/new-producer/pom.xml" />
+        <option value="$PROJECT_DIR$/svc_eureka/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

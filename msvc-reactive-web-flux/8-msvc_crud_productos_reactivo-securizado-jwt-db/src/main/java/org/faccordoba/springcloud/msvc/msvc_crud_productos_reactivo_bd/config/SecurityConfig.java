@@ -2,47 +2,34 @@ package org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.config;
 
 
 import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.security.SecurityContextRepository;
+import org.faccordoba.springcloud.msvc.msvc_crud_productos_reactivo_bd.service.UserDetailsService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableReactiveMethodSecurity;
 import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
 import org.springframework.security.config.web.server.ServerHttpSecurity;
-import org.springframework.security.core.userdetails.MapReactiveUserDetailsService;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.ReactiveUserDetailsService;
 import org.springframework.security.web.server.SecurityWebFilterChain;
 
-import java.util.List;
 
-@Configuration
 @EnableWebFluxSecurity
 @EnableReactiveMethodSecurity
+@Configuration
 public class
 SecurityConfig {
     private final SecurityContextRepository securityContextRepository;
+    private final UserDetailsService userDetailsService;
 
-    public SecurityConfig(SecurityContextRepository securityContextRepository) {
+    public SecurityConfig(SecurityContextRepository securityContextRepository, UserDetailsService userDetailsService) {
         this.securityContextRepository = securityContextRepository;
+        this.userDetailsService = userDetailsService;
     }
 
     @Bean
-    public MapReactiveUserDetailsService users() throws Exception{
-        List<UserDetails> userDetailsList = List.
-                of(User.withUsername("user1")
-                        .password("user1")
-                        .roles("USER").build(),
-                        User.withUsername("admin")
-                                .password("admin")
-                                .roles("USER", "ADMIN").build(),
-                        User.withUsername("user2")
-                                .password("user2")
-                                .roles("OPERATOR").build());
-        return new MapReactiveUserDetailsService(userDetailsList);
+    public ReactiveUserDetailsService users() throws Exception{
+        return userDetailsService::findByUsername;
     }
-
-
-
 
     @Bean
     public SecurityWebFilterChain filter(ServerHttpSecurity http) throws Exception {

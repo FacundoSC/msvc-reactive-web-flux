@@ -1,59 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.crdev</groupId>
-    <artifactId>msvc-reactive-web-flux</artifactId>
-    <version>1.0-SNAPSHOT</version>
-
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <groupId>com.crdev</groupId>
+        <artifactId>msvc-reactive-web-flux</artifactId>
+        <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <modules>
-        <module>core</module>
-        <module>msvc_crud_products</module>
-        <module>msvc_crud_productos_reactivo</module>
-        <module>2-msvc_names_reactive</module>
-        <module>2b-msvc_names_reactive_funcional</module>
-        <module>msvc_crud_productos_reactivo_2</module>
-        <module>msvc_rastrear</module>
-        <module>msvc_crud_productos_reactivo-securizado</module>
-        <module>msvc_crud_productos_reactivo-securizado-jwt</module>
-        <module>msvc_rastrear-jwt</module>
-        <module>8-msvc_crud_productos_reactivo-securizado-jwt-db</module>
-        <module>10-msvc_crud_productos_reactivo-bd</module>
-        <module>10b-msvc_crud_productos_reactivo-bd-funtional-endpoint</module>
-        <module>11_app_example_producer</module>
-        <module>11_app_example_consumer</module>
-        <module>13_msvc_orders</module>
-        <module>14_msvc_crud_productos_reactivo-bd-funtional-endpoint</module>
-        <module>15_msvc_envios</module>
-        <module>16_svc_eureka</module>
-        <module>17_msvc_crud_productos_reactivo_tienda_1_eureka</module>
-        <module>18_msvc_crud_productos_reactivo_tienda_2_eureka</module>
-        <module>19_msvc_rastrear_eureka</module>
-    </modules>
-
-
+    <groupId>com.crdev</groupId>
+    <artifactId>msvc_rastrear</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>msvc_rastrear</name>
+    <description>msvc_rastrear</description>
+    <url/>
+    <licenses>
+        <license/>
+    </licenses>
+    <developers>
+        <developer/>
+    </developers>
+    <scm>
+        <connection/>
+        <developerConnection/>
+        <tag/>
+        <url/>
+    </scm>
     <properties>
         <java.version>26</java.version>
-        <maven.compiler.source>26</maven.compiler.source>
-        <maven.compiler.target>26</maven.compiler.target>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
-    <packaging>pom</packaging>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -62,8 +49,15 @@
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
+            <artifactId>spring-boot-starter-webflux-test</artifactId>
             <scope>test</scope>
+        </dependency>
+
+        <!-- Source: https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-eureka-client -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>5.0.2</version>
         </dependency>
     </dependencies>
 
@@ -119,4 +113,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>

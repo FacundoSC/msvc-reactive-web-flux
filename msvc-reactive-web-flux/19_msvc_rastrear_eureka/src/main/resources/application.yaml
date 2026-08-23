@@ -1,0 +1,12 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: msvc_rastrear
+eureka:
+  client:
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
+
