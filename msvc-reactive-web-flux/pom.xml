@@ -4,33 +4,36 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <!-- id parent -->
     <groupId>com.crdev</groupId>
     <artifactId>msvc-reactive-web-flux</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <!-- lookup parent from repository -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <version>4.1.1</version>
+        <relativePath/>
     </parent>
 
     <modules>
-        <module>core</module>
-        <module>msvc_crud_products</module>
-        <module>msvc_crud_productos_reactivo</module>
-        <module>2-msvc_names_reactive</module>
+        <module>1_msvc_crud_products</module>
+        <module>2_msvc_names_reactive</module>
         <module>2b-msvc_names_reactive_funcional</module>
-        <module>msvc_crud_productos_reactivo_2</module>
-        <module>msvc_rastrear</module>
-        <module>msvc_crud_productos_reactivo-securizado</module>
-        <module>msvc_crud_productos_reactivo-securizado-jwt</module>
-        <module>msvc_rastrear-jwt</module>
-        <module>8-msvc_crud_productos_reactivo-securizado-jwt-db</module>
+        <module>3_msvc_crud_productos_reactivo</module>
+        <module>3b_msvc_crud_productos_reactivo_2</module>
+        <module>5_test-crud-products-spring</module>
+        <module>6_msvc_rastrear</module>
+        <module>8_msvc_crud_productos_reactivo-securizado</module>
+        <module>8a-msvc_crud_productos_reactivo-securizado-jwt-db</module>
+        <module>8b-msvc_crud_productos_reactivo-securizado-jwt</module>
+        <module>9_msvc_rastrear</module>
+        <module>9b-msvc_rastrear-jwt</module>
         <module>10-msvc_crud_productos_reactivo-bd</module>
         <module>10b-msvc_crud_productos_reactivo-bd-funtional-endpoint</module>
-        <module>11_app_example_producer</module>
         <module>11_app_example_consumer</module>
+        <module>12_app_example_producer</module>
         <module>13_msvc_orders</module>
         <module>14_msvc_crud_productos_reactivo-bd-funtional-endpoint</module>
         <module>15_msvc_envios</module>
