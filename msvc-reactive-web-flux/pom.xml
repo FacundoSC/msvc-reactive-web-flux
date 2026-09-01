@@ -41,6 +41,7 @@
         <module>17_msvc_crud_productos_reactivo_tienda_1_eureka</module>
         <module>18_msvc_crud_productos_reactivo_tienda_2_eureka</module>
         <module>19_msvc_rastrear_eureka</module>
+        <module>20_svc_gateway</module>
     </modules>
 
 

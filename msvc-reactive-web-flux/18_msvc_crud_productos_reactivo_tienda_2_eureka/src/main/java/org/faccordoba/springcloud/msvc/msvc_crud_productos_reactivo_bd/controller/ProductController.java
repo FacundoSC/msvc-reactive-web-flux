@@ -10,7 +10,7 @@ import reactor.core.publisher.Mono;
 
 
 @RestController
-@RequestMapping("/api/v1/products")
+@RequestMapping("/api/v1/products/")
 public class ProductController {
     private final ProductService productService;
 
@@ -18,24 +18,24 @@ public class ProductController {
         this.productService = productService;
     }
 
-    @GetMapping(value = "/")
+    @GetMapping()
     public ResponseEntity<Flux<Product>> findAll() {
         System.out.println("method all");
         return  ResponseEntity.ok(productService.findAll());
     }
 
-    @PostMapping(value = "/")
+    @PostMapping()
     public ResponseEntity<Mono<Void>> save(@RequestBody Product product ) {
         System.out.println("metodo save");
         return  ResponseEntity.ok(productService.save(product));
     }
 
-    @GetMapping(value = "/category/{category}")
+    @GetMapping(value = "category/{category}")
     public ResponseEntity<Flux<Product>> getAllProductsByCategory(@PathVariable String category ) {
          return  ResponseEntity.ok(productService.findByCategory(category));
      }
 
-    @GetMapping(value = "/{code}")
+    @GetMapping(value = "{code}")
     public ResponseEntity<Mono<Product>> getProductByCode(@PathVariable("code") int code) {
         return ResponseEntity.ok(productService.findByCode(code));
      }
